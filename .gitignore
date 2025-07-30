@@ -4,3 +4,5 @@
 
 /MonitorBrightness/.vs
 *.cache
+*.db
+/.vs
