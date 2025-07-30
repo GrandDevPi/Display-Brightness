@@ -38,8 +38,6 @@ namespace MonitorProfiler
         {
             TrayIcon = new NotifyIcon();
             TrayIcon.Text = "Display Brightness";
-
-            //The icon is added to the project resources.            
             TrayIcon.Icon = Icon.ExtractAssociatedIcon(Assembly.GetExecutingAssembly().Location);
 
             contextMenu = new ContextMenuStrip();
@@ -47,21 +45,25 @@ namespace MonitorProfiler
             contextMenu.SuspendLayout();
             contextMenu.ShowCheckMargin = false;
             contextMenu.ShowImageMargin = false;
-            contextMenu.ResumeLayout(false);
 
-            // Check monitors and populate menu
-            AddMonitors();            
-            
-            // Add a seperator
+            // Add monitor controls
+            AddMonitors();
+
+            // Add a separator
             contextMenu.Items.Add(new ToolStripSeparator());
 
-            // Add addtional tools
-            ToolsMenuItem toolsMenuItem = new ToolsMenuItem();
-            toolsMenuItem.ToolsControl.RefreshButton.Click += (s, e) =>
+            // Add Options menu
+            var optionsControl = new OptionsControl();
+            optionsControl.RefreshClicked += (s, e) => RefreshMonitors();
+            optionsControl.ExitClicked += (s, e) => Application.Exit();
+            var optionsMenuItem = new ToolStripControlHost(optionsControl)
             {
-                RefreshMonitors();
+                AutoSize = false,
+                Size = optionsControl.Size
             };
-            contextMenu.Items.Add(toolsMenuItem);
+            contextMenu.Items.Add(optionsMenuItem);
+
+            contextMenu.ResumeLayout(false);
             TrayIcon.ContextMenuStrip = contextMenu;
         }
 

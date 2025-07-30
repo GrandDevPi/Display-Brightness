@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DisplayBrightness</RootNamespace>
     <AssemblyName>DisplayBrightness</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ApplicationIcon>config.ico</ApplicationIcon>
     <FileUpgradeFlags>
@@ -73,6 +73,9 @@
     </Compile>
     <Compile Include="MonitorList.cs" />
     <Compile Include="MyApplicationContext.cs" />
+    <Compile Include="OptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="ToolsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
