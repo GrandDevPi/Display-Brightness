@@ -15,7 +15,7 @@ MonitorProfiler is a Windows system tray application that allows users to view a
 
 ## Screenshots
 
-*(Add screenshots here to showcase the UI and features)*
+![MonitorProfiler Screenshot](https://github.com/GrandDevPi/Display-Brightness/blob/master/Screenshot%202025-07-30%20183518.png?raw=true)
 
 ## Installation
 
