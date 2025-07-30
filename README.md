@@ -1,6 +1,6 @@
-# MonitorProfiler
+# Luminite
 
-MonitorProfiler is a Windows system tray application that allows users to view and control the brightness of their connected monitors. Designed for convenience, it provides quick access to brightness controls and system options directly from the tray.
+Luminite is a Windows system tray application that allows users to view and control the brightness of their connected monitors. Designed for convenience, it provides quick access to brightness controls and system options directly from the tray.
 
 ## Features
 
@@ -15,7 +15,7 @@ MonitorProfiler is a Windows system tray application that allows users to view a
 
 ## Screenshots
 
-![MonitorProfiler Screenshot](https://github.com/GrandDevPi/Display-Brightness/blob/master/Screenshot%202025-07-30%20183518.png?raw=true)
+![Luminite Screenshot](https://github.com/GrandDevPi/Luminite/blob/master/Screenshot%202025-07-30%20183518.png?raw=true)
 
 ## Installation
 
